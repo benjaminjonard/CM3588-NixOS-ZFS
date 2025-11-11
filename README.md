@@ -2,7 +2,7 @@
 
 I initially wrote this as a personal reminder in case I needed to reinstall my board, but since it was quite a journey to get everything working, I hope it can help others as well.
 
-> ⚠️ **Note:** This is not necessarily the only or best way to install NixOS on this hardware — it's simply what worked for me.  
+> **Note:** This is not necessarily the only or best way to install NixOS on this hardware — it's simply what worked for me.  
 > Much of this information was gathered from multiple scattered sources, which I’ve compiled here into a complete guide. I listed some of them at the end of this Readme.  
 
 ## 🧰 Create a NixOS image
@@ -22,7 +22,7 @@ We’ll use the [`nixos-aarch64-images`](https://github.com/Mic92/nixos-aarch64-
 After the build finishes, you’ll get a file named `result`, this is your NixOS image.
 
 - Flash te result file to an external drive (USB stick, SD card...) For this tutorial, we’ll assume you’re using an SD card.
-> 💡 I personally used **Etcher**, but had to add a random extension to the `result` file (e.g., .img) for Etcher to recognize it.
+> I personally used **Etcher**, but had to add a random extension to the `result` file (e.g., .img) for Etcher to recognize it.
 
 <br>
 
