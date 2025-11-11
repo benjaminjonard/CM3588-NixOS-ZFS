@@ -5,6 +5,8 @@ I initially wrote this as a personal reminder in case I needed to reinstall my b
 > **Note:** This is not necessarily the only or best way to install NixOS on this hardware — it's simply what worked for me.  
 > Much of this information was gathered from multiple scattered sources, which I’ve compiled here into a complete guide. I listed some of them at the end of this Readme.  
 
+<br>
+
 ## 🧰 Create a NixOS image
 
 We first need to build a compatible image for the **CM3855** board.  
@@ -29,6 +31,8 @@ After the build finishes, you’ll get a file named `result`, this is your NixOS
 Now you should have a bootable SD card with NixOS Live.
 However, since HDMI output won’t work, you’ll need to access the board remotely via SSH.
 
+<br>
+
 ## 🔑 Enable SSH Access on the Live Image
 
 - Plug the SD card back into your computer (mount it if it doesn’t mount automatically).
@@ -36,6 +40,7 @@ However, since HDMI output won’t work, you’ll need to access the board remot
 - Create a new folder : `mkdir authorized_keys.d`
 - Copy and paste your public SSH key in a file called `root` :  `nano authorized_keys.d/root`
 
+<br>
 
 ## 💾 Copy the SD Card Content to the eMMC
 - Insert the SD card into the CM3588.
@@ -48,6 +53,8 @@ Once the copy is done:
 - Shut down the CM3588
 - Remove the SD card
 - Power it back on — it should now boot into the live NixOS environment from the eMMC
+
+<br>
 
 ## ⚙️ Install NixOS on eMMC
 - Resize the main partition to use all available space on the eMMC:
@@ -76,6 +83,8 @@ resize2fs /dev/mmcblk1p3
 ```
 - Finally, install NixOS : `nixos-install --root /mnt`
 - Reboot and everything should be good to go !
+
+<br>
 
 ## 🔗 References
 - https://wiki.nixos.org/wiki/NixOS_on_ARM/FriendlyELEC_CM3588#Installation
