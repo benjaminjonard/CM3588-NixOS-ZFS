@@ -21,7 +21,7 @@ We’ll use the [`nixos-aarch64-images`](https://github.com/Mic92/nixos-aarch64-
  ```
 After the build finishes, you’ll get a file named `result`, this is your NixOS image.
 
-- Flash te result file to an external drive (USB stick, SD card...) For this tutorial, we’ll assume you’re using an SD card.
+- Flash the result file to an external drive (USB stick, SD card...) For this tutorial, we’ll assume you’re using an SD card.
 > I personally used **Etcher**, but had to add a random extension to the `result` file (e.g., .img) for Etcher to recognize it.
 
 <br>
