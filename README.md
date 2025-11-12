@@ -89,3 +89,4 @@ resize2fs /dev/mmcblk1p3
 ## 🔗 References
 - https://wiki.nixos.org/wiki/NixOS_on_ARM/FriendlyELEC_CM3588#Installation
 - https://blog.psychollama.io/nixos-on-a-cm3588/
+- https://github.com/Mic92/nixos-aarch64-images
