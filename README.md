@@ -86,8 +86,21 @@ resize2fs /dev/mmcblk0p3
 
 <br>
 
-## ZFS
-Work in progress 
+## 🗄️ ZFS
+Open the '/etc/nixos/configuration.nix' file and add : 
+```
+# ZFS
+  networking.hostId = "94057582";
+  boot.supportedFilesystems = [ "zfs" ];
+  boot.kernelModules = [ "zfs" ];
+  boot.zfs.extraPools = [ "storage" ];
+  services.zfs.autoScrub.enable = true;
+  services.zfs.trim.enable = true;
+
+  environment.systemPackages = with pkgs; [
+    zfs
+  ];
+```
 
 ## 🔗 References
 - https://wiki.nixos.org/wiki/NixOS_on_ARM/FriendlyELEC_CM3588#Installation
