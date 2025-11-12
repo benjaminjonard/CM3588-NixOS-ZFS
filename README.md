@@ -86,6 +86,9 @@ resize2fs /dev/mmcblk1p3
 
 <br>
 
+## ZFS
+Work in progress 
+
 ## 🔗 References
 - https://wiki.nixos.org/wiki/NixOS_on_ARM/FriendlyELEC_CM3588#Installation
 - https://blog.psychollama.io/nixos-on-a-cm3588/
