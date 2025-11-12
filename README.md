@@ -59,9 +59,9 @@ Once the copy is done:
 ## ⚙️ Install NixOS on eMMC
 - Resize the main partition to use all available space on the eMMC:
 ```
-parted /dev/mmcblk1 rm 4
-parted /dev/mmcblk1 resizepart 3 100%
-resize2fs /dev/mmcblk1p3
+parted /dev/mmcblk0 rm 4
+parted /dev/mmcblk0 resizepart 3 100%
+resize2fs /dev/mmcblk0p3
 ```
 - Then mount the main partition : `mount /dev/mmcblk1p3 /mnt`
 - Generate the NixOS configuration : `nixos-generate-config --root /mnt`
