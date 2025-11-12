@@ -93,7 +93,7 @@ Open the '/etc/nixos/configuration.nix' file and add :
   networking.hostId = "random_string";
   boot.supportedFilesystems = [ "zfs" ];
   boot.kernelModules = [ "zfs" ];
-  boot.zfs.extraPools = [ "storage" ]; #Replace "storage" by the name of your pool
+  boot.zfs.extraPools = [ "your_pool_name" ];
   services.zfs.autoScrub.enable = true;
   services.zfs.trim.enable = true;
 
