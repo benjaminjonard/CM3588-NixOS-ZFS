@@ -1,4 +1,4 @@
-# NixOS on CM3855 with ZFS – Quick Install Guide
+# NixOS on CM3855 with ZFS – Install Guide
 
 I initially wrote this as a personal reminder in case I needed to reinstall my board, but since it was quite a journey to get everything working, I hope it can help others as well.
 
