@@ -63,7 +63,7 @@ parted /dev/mmcblk0 rm 4
 parted /dev/mmcblk0 resizepart 3 100%
 resize2fs /dev/mmcblk0p3
 ```
-- Then mount the main partition : `mount /dev/mmcblk1p3 /mnt`
+- Then mount the main partition : `mount /dev/mmcblk0p3 /mnt`
 - Generate the NixOS configuration : `nixos-generate-config --root /mnt`
 - Edit the `/mnt/etc/nixos/configuration.nix` file and make sure it contains SSH configuration. For example with a SSH key :
 ```
