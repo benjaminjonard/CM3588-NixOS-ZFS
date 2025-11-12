@@ -90,7 +90,7 @@ resize2fs /dev/mmcblk0p3
 Open the '/etc/nixos/configuration.nix' file and add : 
 ```
 # ZFS
-  networking.hostId = "94057582";
+  networking.hostId = "random_string";
   boot.supportedFilesystems = [ "zfs" ];
   boot.kernelModules = [ "zfs" ];
   boot.zfs.extraPools = [ "storage" ]; #Replace "storage" by the name of your pool
