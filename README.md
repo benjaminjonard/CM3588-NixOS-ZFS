@@ -46,7 +46,7 @@ However, since HDMI output won’t work, you’ll need to access the board remot
 - Insert the SD card into the CM3588.
 - Boot the board, then connect remotely via SSH: `ssh root@<the_cm3588_ip>`
 - Run `lsblk` to identity the eMMC and the SD card. For this guide, we’ll assume that the eMMC is `/dev/mmcblk0` and the SD card is `/dev/mmcblk1`
-- Copy the SD card content to the eMMC (with all partitions) : `sudo dd if=/dev/mmcblk1 of=mmcblk0 bs=4M status=progress`
+- Copy the SD card content to the eMMC (with all partitions) : `sudo dd if=/dev/mmcblk1 of=/dev/mmcblk0 bs=4M status=progress`
 
 Once the copy is done:
 
