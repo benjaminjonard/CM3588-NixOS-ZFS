@@ -14,7 +14,7 @@ We’ll use the [`nixos-aarch64-images`](https://github.com/Mic92/nixos-aarch64-
 
 <br>
 
-- Install Nix, follow the installation instructions here: [https://nixos.org/download/](https://nixos.org/download/)
+- Install Nix on your machine, follow the installation instructions here: [https://nixos.org/download/](https://nixos.org/download/)
 - Build the image
  ```bash
   nix build --no-write-lock-file 'github:Mic92/nixos-aarch64-images#cm3588NAS' \
